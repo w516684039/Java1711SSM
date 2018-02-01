@@ -22,5 +22,9 @@ public class AccountController {
 	public void transfer1(Integer fromAccountId, Integer toAccountId, Integer money){
 		accountService.transfer(fromAccountId,toAccountId,money);
 	}
+	@RequestMapping(value="/transfer")
+	public void transfer3(Integer fromAccountId, Integer toAccountId, Integer money){
+		accountService.transfer(fromAccountId,toAccountId,money);
+	}
 
 }
